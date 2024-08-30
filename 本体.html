@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记账应用</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginPage" class="page">
+        <h1>欢迎使用记账应用</h1>
+        <button id="loginButton">立即使用</button>
+    </div>
+    <div id="accountingPage" class="page hidden">
+        <h1>记账</h1>
+        <div class="form-container">
+            <input type="number" id="amount" placeholder="金额" step="0.01">
+            <input type="text" id="description" placeholder="描述">
+            <button id="addButton">添加记录</button>
+        </div>
+        <ul id="recordList" class="record-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
